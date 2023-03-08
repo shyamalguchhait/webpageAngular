@@ -1,0 +1,112 @@
+@import "../../../fonts.scss";
+@import "../../../colors.scss";
+$padding: 50px;
+$br: 5px;
+
+.research {
+    @mixin colorEffect {
+        background: -webkit-linear-gradient(
+            0deg,
+            green,
+            red,
+            blue
+        ); // -webkit-linear-gradient(0deg, violet, indigo, blue, green, yellow, orange, red);
+        background-clip: text;
+        -webkit-background-clip: text;
+        //text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        font-family: lato;
+        border: 1px solid var(--lightColor);
+        border-radius: $br;
+        border-collapse: collapse;
+        .letter {
+            background: linear-gradient(
+                0deg,
+                green,
+                red,
+                blue
+            ); //linear-gradient(0deg, violet, indigo, blue, green, yellow, orange, red);
+            background: -webkit-linear-gradient(
+                0deg,
+                green,
+                red,
+                blue
+            ); // -webkit-linear-gradient(0deg, violet, indigo, blue, green, yellow, orange, red);
+            background-clip: text;
+            -webkit-background-clip: text;
+            //text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .resea {
+        color: var(--lightColor);
+        padding-top: $padding;
+
+        .value {
+            padding-left: $padding;
+
+            .list-group {
+                .list-group-item {
+                    color: var(--lightColor);
+                    background-color: var(--lightBg);
+                    @include colorEffect;
+                }
+            }
+        }
+    }
+
+    .tech {
+        color: var(--lightColor);
+        padding-top: $padding;
+
+        .value {
+            padding-left: $padding;
+
+            .row {
+                .col {
+                    &:first-child {
+                        font-weight: bold;
+                    }
+                    &:last-child {
+                        @include colorEffect();
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .extra {
+        color: var(--lightColor);
+        padding-top: $padding;
+
+        .value {
+            padding-left: $padding;
+
+            .list-group {
+                .list-group-item {
+                    color: var(--lightColor);
+                    background-color: var(--lightBg);
+                    @include colorEffect();
+                }
+            }
+        }
+    }
+
+    .teach {
+        color: var(--lightColor);
+        padding-top: $padding;
+
+        .value {
+            padding-left: $padding;
+
+            .list-group {
+                .list-group-item {
+                    color: var(--lightColor);
+                    background-color: var(--lightBg);
+                    @include colorEffect();
+                }
+            }
+        }
+    }
+}
